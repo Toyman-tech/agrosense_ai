@@ -52,7 +52,7 @@ const initialListings: CropListing[] = [
     description: 'Dry harvested high-grade white maize, fully sun-dried and bag-sealed. Moisture level below 12.5%. Perfect for processing.',
     price: 0.85,
     quantity: 1200,
-    imageUrl: 'https://images.unsplash.com/photo-1530026405186-ed1ea0ac7a63?w=600&auto=format&fit=crop&q=60',
+    imageUrl: '/maize.png',
     sellerName: 'Ibrahim Musa',
     createdAt: '2026-07-09'
   },
@@ -63,7 +63,7 @@ const initialListings: CropListing[] = [
     description: 'Extra hot, freshly hand-picked habanero peppers. Premium sorting, no bruised peppers included. Available in 25kg crates.',
     price: 3.20,
     quantity: 355,
-    imageUrl: 'https://images.unsplash.com/photo-1588252303782-cb80119abd6d?w=600&auto=format&fit=crop&q=60',
+    imageUrl: '/rodo.png',
     sellerName: 'Chidi Okafor',
     createdAt: '2026-07-10'
   },
@@ -74,7 +74,7 @@ const initialListings: CropListing[] = [
     description: 'Freshly cut banana bunches. Harvested green to allow safe transit. Natural fertilizers only.',
     price: 1.50,
     quantity: 800,
-    imageUrl: 'https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=600&auto=format&fit=crop&q=60',
+    imageUrl: '/bananas.png',
     sellerName: 'Funmilayo Adebayo',
     createdAt: '2026-07-11'
   },
@@ -85,7 +85,7 @@ const initialListings: CropListing[] = [
     description: 'Highly polished, stone-free local white rice. Harvested in Ebonyi State. High swell capacity, packaged in 50kg bags.',
     price: 1.20,
     quantity: 500,
-    imageUrl: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600&auto=format&fit=crop&q=60',
+    imageUrl: '/rice.png',
     sellerName: 'Ibrahim Musa',
     createdAt: '2026-07-10'
   }
@@ -121,7 +121,7 @@ export default function MarketAccess() {
 
   // Load listings on mount
   useEffect(() => {
-    const saved = localStorage.getItem('agrosense_marketplace_listings_v2');
+    const saved = localStorage.getItem('agrosense_marketplace_listings_v3');
     if (saved) {
       try {
         setListings(JSON.parse(saved));
@@ -130,7 +130,7 @@ export default function MarketAccess() {
       }
     } else {
       setListings(initialListings);
-      localStorage.setItem('agrosense_marketplace_listings_v2', JSON.stringify(initialListings));
+      localStorage.setItem('agrosense_marketplace_listings_v3', JSON.stringify(initialListings));
     }
   }, []);
 
@@ -166,7 +166,7 @@ export default function MarketAccess() {
 
     const updated = [newListing, ...listings];
     setListings(updated);
-    localStorage.setItem('agrosense_marketplace_listings_v2', JSON.stringify(updated));
+    localStorage.setItem('agrosense_marketplace_listings_v3', JSON.stringify(updated));
 
     // Reset and close
     reset();
