@@ -52,7 +52,7 @@ const initialListings: CropListing[] = [
     description: 'Dry harvested high-grade white maize, fully sun-dried and bag-sealed. Moisture level below 12.5%. Perfect for processing.',
     price: 0.85,
     quantity: 1200,
-    imageUrl: 'https://images.unsplash.com/photo-1551754625-70237707defb?w=600&auto=format&fit=crop&q=60',
+    imageUrl: 'https://images.unsplash.com/photo-1530026405186-ed1ea0ac7a63?w=600&auto=format&fit=crop&q=60',
     sellerName: 'Ibrahim Musa',
     createdAt: '2026-07-09'
   },
@@ -62,7 +62,7 @@ const initialListings: CropListing[] = [
     category: 'Vegetables',
     description: 'Extra hot, freshly hand-picked habanero peppers. Premium sorting, no bruised peppers included. Available in 25kg crates.',
     price: 3.20,
-    quantity: 350,
+    quantity: 355,
     imageUrl: 'https://images.unsplash.com/photo-1588252303782-cb80119abd6d?w=600&auto=format&fit=crop&q=60',
     sellerName: 'Chidi Okafor',
     createdAt: '2026-07-10'
@@ -80,12 +80,12 @@ const initialListings: CropListing[] = [
   },
   {
     id: 'crop-4',
-    title: 'Tigernuts (Aya)',
-    category: 'Exotic',
-    description: 'Large sweet tiger nuts, fully washed and sorted. Ready for milk extraction or direct chewing.',
-    price: 4.50,
-    quantity: 250,
-    imageUrl: 'https://images.unsplash.com/photo-1628135960471-700df83eb26c?w=600&auto=format&fit=crop&q=60',
+    title: 'Premium Local Rice (Abakaliki)',
+    category: 'Grains',
+    description: 'Highly polished, stone-free local white rice. Harvested in Ebonyi State. High swell capacity, packaged in 50kg bags.',
+    price: 1.20,
+    quantity: 500,
+    imageUrl: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600&auto=format&fit=crop&q=60',
     sellerName: 'Ibrahim Musa',
     createdAt: '2026-07-10'
   }
