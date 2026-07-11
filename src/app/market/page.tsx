@@ -121,7 +121,7 @@ export default function MarketAccess() {
 
   // Load listings on mount
   useEffect(() => {
-    const saved = localStorage.getItem('agrosense_marketplace_listings');
+    const saved = localStorage.getItem('agrosense_marketplace_listings_v2');
     if (saved) {
       try {
         setListings(JSON.parse(saved));
@@ -130,7 +130,7 @@ export default function MarketAccess() {
       }
     } else {
       setListings(initialListings);
-      localStorage.setItem('agrosense_marketplace_listings', JSON.stringify(initialListings));
+      localStorage.setItem('agrosense_marketplace_listings_v2', JSON.stringify(initialListings));
     }
   }, []);
 
@@ -166,7 +166,7 @@ export default function MarketAccess() {
 
     const updated = [newListing, ...listings];
     setListings(updated);
-    localStorage.setItem('agrosense_marketplace_listings', JSON.stringify(updated));
+    localStorage.setItem('agrosense_marketplace_listings_v2', JSON.stringify(updated));
 
     // Reset and close
     reset();
